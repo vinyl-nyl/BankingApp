@@ -13,12 +13,24 @@
         <!--Profile-->
         <scene sceneID="IUs-gq-M7O">
             <objects>
-                <viewController id="Azs-cw-uiw" customClass="ProfileViewController" customModule="BankingApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Azs-cw-uiw" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PLf-X4-XN0">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TWr-m1-b5R">
+                                <rect key="frame" x="170.66666666666666" y="415.66666666666669" width="52" height="21"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="O9B-Hp-Eu3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TWr-m1-b5R" firstAttribute="centerY" secondItem="PLf-X4-XN0" secondAttribute="centerY" id="4Hb-Ft-Gfm"/>
+                            <constraint firstItem="TWr-m1-b5R" firstAttribute="centerX" secondItem="PLf-X4-XN0" secondAttribute="centerX" id="ZV8-eL-6pD"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="person.circle" catalog="system" id="Kw2-sP-uJa"/>
                 </viewController>
@@ -29,12 +41,24 @@
         <!--History-->
         <scene sceneID="KIs-x6-9Co">
             <objects>
-                <viewController id="GMg-aS-X1R" customClass="HistoryViewController" customModule="BankingApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="GMg-aS-X1R" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2Ri-GH-gMM">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jil-v6-6yf">
+                                <rect key="frame" x="167.66666666666666" y="415.66666666666669" width="58" height="21"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="h5P-Bw-Rz6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jil-v6-6yf" firstAttribute="centerY" secondItem="2Ri-GH-gMM" secondAttribute="centerY" id="Tnx-o0-04W"/>
+                            <constraint firstItem="jil-v6-6yf" firstAttribute="centerX" secondItem="2Ri-GH-gMM" secondAttribute="centerX" id="h43-aC-Ked"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="History" image="newspaper" catalog="system" id="6sz-Ts-oQg"/>
                 </viewController>
@@ -45,12 +69,24 @@
         <!--Wallet-->
         <scene sceneID="HrK-v6-F5K">
             <objects>
-                <viewController id="vcW-To-XyJ" customClass="WalletViewController" customModule="BankingApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vcW-To-XyJ" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="f0r-ak-w29">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wallet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agT-by-WN6">
+                                <rect key="frame" x="171.66666666666666" y="415.66666666666669" width="49.666666666666657" height="21"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="NFa-VD-DN3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="agT-by-WN6" firstAttribute="centerY" secondItem="f0r-ak-w29" secondAttribute="centerY" id="GK8-Gc-z6L"/>
+                            <constraint firstItem="agT-by-WN6" firstAttribute="centerX" secondItem="f0r-ak-w29" secondAttribute="centerX" id="UCY-j0-qIT"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Wallet" image="wallet.pass" catalog="system" id="HWh-3C-PrL"/>
                 </viewController>
@@ -121,6 +157,9 @@
                                                                 <rect key="frame" x="141.33333333333337" y="23" width="219.66666666666663" height="14"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain"/>
+                                                                <connections>
+                                                                    <action selector="notificationButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yIC-Je-f4E"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -138,6 +177,10 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o2P-WR-ffp">
                                                 <rect key="frame" x="0.0" y="70" width="361" height="200"/>
                                                 <subviews>
+                                                    <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="WUU-C2-Cjl">
+                                                        <rect key="frame" x="144" y="87" width="73" height="26"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </pageControl>
                                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Oz0-x2-hgd">
                                                         <rect key="frame" x="0.0" y="0.0" width="361" height="200"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -360,6 +403,7 @@
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain"/>
                                                                 <connections>
+                                                                    <action selector="seeAllButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JXq-zu-NFa"/>
                                                                     <segue destination="FTp-Qp-8g5" kind="show" id="fYy-Ck-gNN"/>
                                                                 </connections>
                                                             </button>
@@ -468,8 +512,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="Yd4-ka-QRa"/>
                     <connections>
+                        <outlet property="allExpenseAmountLabel" destination="Q8X-a4-qmB" id="Bun-cP-n7H"/>
                         <outlet property="allExpenseView" destination="FDG-wn-IMM" id="mcI-MP-sey"/>
                         <outlet property="cardCollectionView" destination="Oz0-x2-hgd" id="HkT-u4-hPc"/>
+                        <outlet property="cardPageControl" destination="WUU-C2-Cjl" id="Txh-v1-geJ"/>
+                        <outlet property="monthlyExpenseAmountLabel" destination="Pv9-Ez-coJ" id="T7P-fT-Ahf"/>
                         <outlet property="monthlyExpenseView" destination="1dO-oC-dO7" id="wGb-Yy-eS2"/>
                         <outlet property="nameLabel" destination="D3L-Yu-tZu" id="1sU-Yd-8mD"/>
                         <outlet property="notificationButton" destination="RxZ-rd-5b3" id="xmE-7X-9Ir"/>
